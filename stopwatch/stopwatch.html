@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="../nav.css">
+
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../alarm/Alarm.html">Alarm</a>
+        <a href="../clocks/clocks.html">Clocks</a>
+        <a href="../stopwatch/stopwatch.html">StopWatch</a>
+        <a href="dices.html">Dices</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+    <div class="pr_content">
+        <div class="pr_left" ">
+            <div class="pr_profile">
+                Stop Watch
+            </div>
+            <div class="pr_time">
+                <span class="time" id="display">00:00:00:00</span>
+            </div>
+            <div class="controler-time">
+                <div class="grid-item">
+                    <i id="playButton" class="far fa-play-circle fa-4x"></i>
+                    <i id="pauseButton" class="far fa-pause-circle fa-4x"></i>
+                </div>
+                <div class="grid-item">
+                    <i id="resetButton" class="far fa-stop-circle fa-4x"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="pr_right" ">
+            <div class="pr_profile">
+                Time laps
+            </div>
+            <div class="pr_lap">
+                <ul id="list">
+                    <li><i class="far fa-clock"></i> 00:00:00:00</li>
+                </ul>
+            </div>
+            <div class="controler-time">
+                <div class="grid-item">
+                    <i id="addButton" class="far fa-plus-circle fa-4x"></i>
+                </div>
+                <div class="grid-item">
+                    <i id="clearButton" class="far fa-trash-alt fa-4x"></i>
+                </div>
+            </div>
+        </div>
+    </div>	
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="stopwatch.js"></script>
+</body>
+</html>

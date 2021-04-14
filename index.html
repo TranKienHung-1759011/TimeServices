@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1759011</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="alarm/Alarm.html">Alarm</a>
+        <a href="clocks/clocks.html">Clocks</a>
+        <a href="stopwatch/stopwatch.html">StopWatch</a>
+        <a href="dices.html">Dices</a>
+        <div class="animation start-home"></div>
+      </nav>
+    <div class="container" id="container">
+
+        <div class="form-container sign-up-container">
+            <h2>Count Down to the new year </h2>
+            <span id="thenewyear"></span>
+            <div class="countdown">
+                <div id="ndays"></div>
+                <div id="nhours"></div>
+                <div id="nminutes"></div>
+                <div id="nseconds"></div>
+            </div>
+        </div>
+        <div class="form-container sign-in-container">
+            <h2>Real time clock</h2>
+            <div id="realtime" class="realtime">
+                <div id="hours"></div>
+                <p>:</p>
+                <div id="minutes"></div>
+                <p>:</p>
+                <div id="seconds"></div>
+                <div id="AMPM"></div>
+            </div>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button class="ghost" id="signIn">Go to Real Time</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                 
+                    <button class="ghost" id="signUp">Go to New Year</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--script start-->
+    <script src="main.js"></script>
+    <!--script end-->
+</body>
+</html>
